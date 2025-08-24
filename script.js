@@ -55,6 +55,11 @@ form.addEventListener(
     if (validationResult === true) {
       emailInput.value = '';
     }
+    if (validationResult === true) {
+      errorMessageText.classList.remove(
+        'visually-hidden'
+      );
+    }
   }
 );
 
