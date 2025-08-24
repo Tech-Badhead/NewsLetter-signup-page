@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./)
+![](./img/newsLetter%20SS.png)
 
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://tech-badhead.github.io/NewsLetter-signup-page/]
 
 ### Built with
 

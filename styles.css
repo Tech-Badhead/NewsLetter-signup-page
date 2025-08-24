@@ -183,7 +183,7 @@ form button:hover {
 
   .mobile-success-message {
     max-width: 100%;
-    background-color: var(--blue-800);
+    background-color: var(--blue-700);
   }
 
   .mobile-success-message img {
@@ -239,7 +239,7 @@ form button:hover {
 
   .mobile-success-message {
     max-width: 100%;
-    background-color: var(--blue-800);
+    background-color: var(--blue-700);
   }
 
   .mobile-success-message img {
