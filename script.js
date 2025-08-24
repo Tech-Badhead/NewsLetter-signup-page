@@ -51,10 +51,17 @@ form.addEventListener(
       );
     }
 
+    const target =
+      successMessage.querySelector(
+        'strong'
+      );
+    target.textContent = email;
+
     // clear the input & error message only on success
     if (validationResult === true) {
       emailInput.value = '';
     }
+
     if (validationResult === true) {
       errorMessageText.classList.remove(
         'visually-hidden'
