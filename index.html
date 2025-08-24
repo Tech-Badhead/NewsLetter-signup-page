@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css">
+    <title>NewsLetter-sign-up</title>
+</head>
+<body>
+    <div class="container">
+       <main>
+            <div class="signup-image">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./img/illustration-sign-up-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="./img/illustration-sign-up-tablet.svg">
+                    <img src="./img/illustration-sign-up-mobile.svg" alt="">
+                </picture>
+            </div>
+
+            <section class="signup-content">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <div><img src="./img/icon-list.svg" alt="icon-list"><li>Product discovery and building what matters</li></div>
+                    <div><img src="./img/icon-list.svg" alt="icon-list"> <li>Measuring to ensure updates are a success</li></div>
+                    <div><img src="./img/icon-list.svg" alt="icon-list"><li>And much more!</li></div>
+                </ul>
+                <form novalidate id="signup-form">
+                    <div class="flex-layout"><label for="email">Email address</label><span class="visually-hidden"></span></div>
+                    <input  type="email" name="email" placeholder="email@company.com" required>
+                    <button type="submit">Subscribe to monthly newsletter</button>
+                </form>
+                <div class="mobile-success-message hidden">
+                    <div class="mobile-success-message-container">
+                        <img src="./img/icon-success.svg" alt="success-icon">
+                        <h2>Thanks for subscribing!</h2>
+                        <p>A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. Please open it and click the button inside to confirm your subscription</p>
+                        <button class="btn-close">Dismiss message</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
