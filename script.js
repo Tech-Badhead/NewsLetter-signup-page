@@ -40,18 +40,18 @@ form.addEventListener(
       validateEmail(email);
 
     if (validationResult === true) {
-      // ✅ Success
+      // Success
       successMessage.classList.remove(
         'hidden'
       );
     } else {
-      // ❌ Invalid (error string returned)
+      //  Invalid (error string returned)
       successMessage.classList.add(
         'hidden'
       );
     }
 
-    // Optional: clear the input only on success
+    // clear the input & error message only on success
     if (validationResult === true) {
       emailInput.value = '';
     }
