@@ -63,9 +63,7 @@ form.addEventListener(
     }
 
     if (validationResult === true) {
-      errorMessageText.classList.remove(
-        'visually-hidden'
-      );
+      errorMessageText.textContent = '';
     }
   }
 );
@@ -92,7 +90,7 @@ function validateEmail(email) {
     errorMessageText.style.color =
       'red';
 
-    return 'Invalid email format';
+    return ' ';
   }
 
   return true;
