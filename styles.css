@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,7 +33,6 @@ body {
   width: 100%;
   max-width: 375px;
   margin: 0 auto;
-  position: relative;
   box-shadow: 0 0 10px
     rgba(0, 0, 0, 0.1);
 }
@@ -93,7 +94,7 @@ form input {
 
 form input[type='email']:focus {
   outline: none;
-  border: 2px solid var(--red);
+  border: 3px solid var(--red);
 }
 
 form button {
@@ -131,8 +132,6 @@ form button:hover {
   z-index: 999;
   padding: 6rem 1.5rem;
   text-align: left;
-  /* box-shadow: 0 0 10px
-    rgba(0, 0, 0, 0.1); */
 }
 
 .mobile-success-message img {
@@ -161,7 +160,7 @@ form button:hover {
   max-width: 375px;
   padding: 1.1rem 1rem;
   border-radius: 0.5rem;
-  background-color: var(--blue-700);
+  background-color: var(--blue-800);
   color: var(---white);
   font-weight: 700;
   cursor: pointer;
@@ -173,9 +172,14 @@ form button:hover {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    background: var(--blue-700);
+  }
+
   main {
     display: flex;
     flex-direction: column;
+    background-color: var(---white);
   }
 
   .container {
@@ -183,9 +187,15 @@ form button:hover {
     border-radius: 15px;
   }
 
+  .flex-layout span {
+    right: 10rem;
+    bottom: 100px;
+    top: 635px;
+  }
+
   .mobile-success-message {
     max-width: 100%;
-    background-color: var(--blue-700);
+    background-color: var(--blue-800);
   }
 
   .mobile-success-message img {
@@ -214,12 +224,18 @@ form button:hover {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    background: var(--blue-700);
+  }
+
   main {
     flex-direction: row-reverse;
+    background-color: var(---white);
   }
 
   .container {
     max-width: 860px;
+    margin: 3rem auto;
   }
 
   .signup-image {
@@ -237,7 +253,7 @@ form button:hover {
 
   .mobile-success-message {
     max-width: 100%;
-    background-color: var(--blue-700);
+    background-color: var(--blue-800);
   }
 
   .mobile-success-message img {
