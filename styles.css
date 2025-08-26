@@ -74,7 +74,7 @@ form label {
   right: 2rem;
   display: inline;
   float: right;
-  bottom: 153px;
+  bottom: 4px;
 }
 
 .visually-hidden {
@@ -171,6 +171,27 @@ form button:hover {
   display: none;
 }
 
+@media screen and (min-width: 390px) {
+  .flex-layout span {
+    right: 2.5rem;
+    bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .flex-layout span {
+    right: 3.5rem;
+    bottom: 85px;
+  }
+}
+
+@media screen and (min-width: 428px) {
+  .flex-layout span {
+    right: 3.5rem;
+    bottom: 115px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   body {
     background: var(--blue-700);
@@ -247,8 +268,8 @@ form button:hover {
   }
 
   .flex-layout span {
-    right: 30rem;
-    bottom: 238px;
+    left: 24rem;
+    top: 420px;
   }
 
   .mobile-success-message {
@@ -278,5 +299,12 @@ form button:hover {
   .mobile-success-message button {
     margin-top: 2rem;
     padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .flex-layout span {
+    left: 35rem;
+    top: 420px;
   }
 }
